@@ -1,0 +1,166 @@
+@font-face {
+    font-family: ComicSans;
+    src: url(Assets/Ldfcomicsansbold-zgma.ttf);
+}
+
+@keyframes Credits {
+    from {bottom: 100vh;}
+    to {bottom: 0vh;}
+}
+
+@keyframes ClickBG {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px 290px;}
+}
+
+@keyframes UpgBG {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px 400px;}
+}
+
+@keyframes Sway {
+    0% {rotate: 10deg;}
+    50% {rotate: -10deg;}
+    100% {rotate: 10deg;}
+}
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+}
+
+#Credits {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(Assets/DuckSwing.gif);
+    background-size: 100px 100px;
+
+    bottom: 100vh;
+
+    z-index: 20;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: ComicSans, 'Comic Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: wheat;
+    -webkit-text-stroke: 3px darkred;
+    user-select: none;
+    text-wrap: nowrap;
+}
+
+p {
+    font-family: ComicSans, 'Comic Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    margin: 0px 10px;
+    user-select: none;
+}
+
+#Title {
+    font-family: ComicSans, 'Comic Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 3px orangered;
+    user-select: none;
+}
+
+#MartimClick {
+    width: 300px;
+    margin-top: 30%;
+    border: 5px outset rebeccapurple;
+    border-radius: 100px;
+    user-select: none;
+
+    animation-name: Sway;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+#ClickerDiv {
+    background-image: url(Assets/Duckg.gif);
+    background-repeat: repeat;
+    background-size: 290px;
+    width: 30vw;
+    height: 100vh;
+    text-align: center;
+    border-right: 5px outset orangered;
+
+    animation-name: ClickBG;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#UpgradeDiv {
+    background-image: url(Assets/UpgradeBg.png);
+    background-repeat: repeat;
+    background-size: 200px 400px;
+    width: 70vw;
+    height: 100vh;
+    text-align: center;
+    border-left: 5px outset orangered;
+
+    animation-name: UpgBG;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.UpgradeImg {
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    margin: 0px 20px;
+    border-radius: 20px;
+
+    animation-name: Sway;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.Purchase {
+    margin: 0px 50px;
+    min-width: 200px;
+    min-height: 40px;
+    font-family: ComicSans, 'Comic Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: orangered;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.Purchase:hover {
+    margin: 0px 50px;
+    min-width: 200px;
+    min-height: 40px;
+    font-family: ComicSans, 'Comic Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: orangered;
+    background-color: palegreen;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.UpDiv {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}

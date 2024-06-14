@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Martim Clicker</title>
+</head>
+<body>
+    <main>
+        <div id="ClickerDiv">
+            <h2 id="MartimCount">0</h2>
+            <h2>Martins</h2>
+            <img draggable="false" id="MartimClick" src="Assets/Martim.png" alt="Martim Clicar">
+        </div>
+        <div id="UpgradeDiv">
+            <h1 id="Title">MARTIM CLICKER!!!!</h1>
+            <div class="UpDiv">
+                <img draggable="false" class="UpgradeImg" src="Assets/DuckSpin.gif" alt="Patinho Upgrade">
+                <p>Patinho Upgrade - +1 Martim por clique</p>
+                <p id="DuckCount">Tens 0</p>
+                <button id="DuckBuy" class="Purchase" onclick="PurchaseDuck()">100 Martins</button>
+            </div>
+            <div class="UpDiv">
+                <img draggable="false" class="UpgradeImg" src="Assets/Fyction.jpeg" alt="Fyction Additions">
+                <p>Fyction Addiction - +1 Martim Por Segundo</p>
+                <p id="FyctionCount">Tens 0</p>
+                <button id="FyctionBuy" class="Purchase" onclick="PurchaseFyction()">200 Martins</button>
+            </div>
+            <div class="UpDiv">
+                <img draggable="false" class="UpgradeImg" src="Assets/Fishe.jpeg" alt="Fyction Additions">
+                <p>I foind Fishe - Reduz tempo do autoclicker</p>
+                <p id="FisheCount">Tens 0</p>
+                <button id="FisheBuy" class="Purchase" onclick="PurchaseFishe()">200 Martins</button>
+            </div>
+            <div class="UpDiv">
+                <img draggable="false" class="UpgradeImg" src="Assets/rock.jpeg" alt="Rock and Stone">
+                <p>ROCK AND STONE - Da descontos</p>
+                <p id="RockCount">-0 Martins OFF</p>
+                <button id="RockBuy" class="Purchase" onclick="PurchaseRock()">500 Martins</button>
+            </div>
+            <div class="UpDiv">
+                <img draggable="false" class="UpgradeImg" src="Assets/DuckCry.gif" alt="DA ME FREQUENTE">
+                <p>DA ME FREQUENTE SEU PATO PATUDO</p>
+                <button id="FrequenteBuy" class="Purchase" onclick="PurchaseFrequente()">999999999 Martins</button>
+            </div>
+        </div>
+        <div id="Credits">
+            <h2>BYE GUYS</h2>
+        </div>
+    </main>
+</body>
+
+<script src="main.js"></script>
+
+</html>
