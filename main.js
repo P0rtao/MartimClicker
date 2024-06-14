@@ -19,11 +19,11 @@ var Autoclick = setInterval(() => {
 
 var Discount = setInterval(() => {
     
-    if (RockDiscount < 250) {
+    if (RockDiscount < 800) {
         RockDiscount += 1
     }
     RockCount.innerHTML = "-" + RockDiscount + " Martins OFF"
-}, 1000);
+}, 500);
 
 //------------ Duck Upgrade Values ------------------------------------
 
