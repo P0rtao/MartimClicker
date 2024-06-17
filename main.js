@@ -19,7 +19,7 @@ var Autoclick = setInterval(() => {
 
 var Discount = setInterval(() => {
     
-    if (RockDiscount < 800) {
+    if (RockDiscount < 2000) {
         RockDiscount += 1
     }
     RockCount.innerHTML = "-" + RockDiscount + " Martins OFF"
@@ -75,7 +75,7 @@ function AddPoint() {
 }
 
 function PurchaseDuck() {
-    if (MartimAmmount >= DuckCost && DuckAmmount < 100) {
+    if (MartimAmmount >= DuckCost && DuckAmmount < 1000) {
         MartimAmmount -= DuckCost
         DuckAmmount++
         DuckCount.innerHTML = "Tens " + DuckAmmount
@@ -87,13 +87,13 @@ function PurchaseDuck() {
 
         DuckButton.innerHTML = DuckCost + " Martins"
         UpdatePoints()
-    } else if (DuckAmmount >= 100) {
+    } else if (DuckAmmount >= 1000) {
         DuckButton.innerHTML = "Já tens muitos patos"
     }
 }
 
 function PurchaseFyction() {
-    if (MartimAmmount >= FyctionCost && FyctionAmmount < 50) {
+    if (MartimAmmount >= FyctionCost && FyctionAmmount < 100) {
         MartimAmmount -= FyctionCost
         FyctionAmmount++
         FyctionCount.innerHTML = "Tens " + FyctionAmmount
@@ -105,13 +105,13 @@ function PurchaseFyction() {
 
         FyctionButton.innerHTML = FyctionCost + " Martins"
         UpdatePoints()
-    } else if (FyctionAmmount >= 50) {
+    } else if (FyctionAmmount >= 100) {
         FyctionButton.innerHTML = "Já tens muitos Fyctiones"
     }
 }
 
 function PurchaseFishe() {
-    if (MartimAmmount >= FisheCost && FisheAmmount < 20) {
+    if (MartimAmmount >= FisheCost && FisheAmmount < 45) {
         MartimAmmount -= FisheCost
         FisheAmmount++
         FisheCount.innerHTML = "Tens " + FisheAmmount
@@ -129,7 +129,7 @@ function PurchaseFishe() {
 
         FisheButton.innerHTML = FisheCost + " Martins"
         UpdatePoints()
-    } else if (FisheAmmount >= 20) {
+    } else if (FisheAmmount >= 45) {
         FisheButton.innerHTML = "Já tens muitos Fishes"
     }
 }
@@ -140,17 +140,17 @@ function PurchaseRock() {
             MartimAmmount -= RockCost
 
             DuckCost -= RockDiscount
-            if (DuckAmmount < 100) {
+            if (DuckAmmount < 1000) {
                 DuckButton.innerHTML = DuckCost + " Martins"
             }
             
             FyctionCost -= RockDiscount
-            if (FyctionAmmount < 50) {
+            if (FyctionAmmount < 100) {
                 FyctionButton.innerHTML = FyctionCost + " Martins"
             }
 
             FisheCost -= RockDiscount
-            if (FisheAmmount < 20) {
+            if (FisheAmmount < 45) {
                 FisheButton.innerHTML = FisheCost + " Martins"
             }
             
